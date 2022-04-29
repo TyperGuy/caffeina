@@ -1,3 +1,4 @@
+import '../assets/styles/style.global.scss';
 import type { AppProps } from 'next/app';
 import { PropsWithChildren } from 'react';
 

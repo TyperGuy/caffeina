@@ -19,7 +19,7 @@
     },
     "baseUrl": "./src",
     "typeRoots": [
-      "src/customTypings",
+      "src/types/button",
       "node_modules/@types"
     ]
 

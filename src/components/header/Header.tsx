@@ -4,7 +4,17 @@ import Image from 'next/image';
 import Logo from '../../assets/images/logo.png';
 import Button from 'components/button/Button';
 import Constants  from 'international/pt-pt/constants.json';
-import Link from 'next/link'
+import Link from 'next/link';
+import {ButtonType} from 'myButton';
+
+const Props : ButtonType = {
+  color: "#FFF",
+  hoverColor:"#FFF",
+  background: "#222",
+  hoverBackground:"#222",
+  title : Constants.buttons.signup
+}
+
 
 const Header : React.FC =()=>{
 
@@ -16,7 +26,7 @@ const Header : React.FC =()=>{
         <span>FQA</span>
         <span>Nossa Equipe</span>
       </Child>
-      <Button title={Constants.buttons.signup}/>
+      <Button {...Props}/>
     </Container>
   )
 }
