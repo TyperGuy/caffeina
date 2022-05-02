@@ -10,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  background-color: #fff;
 `;
 
 export const ChildContainer = styled.div`

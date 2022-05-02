@@ -5,6 +5,7 @@ import React from 'react';
 import FloatingButton from 'components/landing-page-float-buttons';
 import Modal from 'components/modal';
 import Calltoaction from '../calltoaction/index';
+import Events from '../events/Events';
 
 
 const LandingPage: NextPage = () => {
@@ -43,6 +44,7 @@ const LandingPage: NextPage = () => {
         <Header/>
       </div>
       <Calltoaction/>
+      <Events/>
       <FloatingButton isOnBottom={isScrolling} />
       <Modal modalRef={modalRef} />
     </div>

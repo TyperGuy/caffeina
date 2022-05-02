@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Container } from './landing-page-float-buttons.styles'
+import {BsFillArrowUpCircleFill as Arrow} from 'react-icons/bs';
 
 export const FloatingButton: FC<{ isOnBottom: boolean }> = ({ isOnBottom }) => {
   const sendToTop = () => {
@@ -10,9 +11,7 @@ export const FloatingButton: FC<{ isOnBottom: boolean }> = ({ isOnBottom }) => {
   return(
     <Container isOnBottom={isOnBottom}>
       <div className="wrapper">
-        <img
-          src="/icons8-acima.png"
-          alt="send to top"
+        <Arrow
           className="icon"
           onClick={() => sendToTop()}
           />
