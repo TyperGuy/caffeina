@@ -11,6 +11,7 @@ const Button : React.FC<ButtonType> =(props) => {
 
   const CustomButton = styled.button`
   height: 50px;
+  max-width: 200px;
   background: ${props.background};
   color: ${props.color};
   border: none;

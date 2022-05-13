@@ -17,15 +17,13 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
       <Container>
         <Content>
           <Image src="/cookie.png"/>
-          <Title>Este site usa cookies :)</Title>
-
           <Description>
-          Armazenamos dados temporariamente para melhorar sua experiência de navegação e recomendar conteúdo de seu interesse.
+            Nós nos importamos com a sua privacidade, e gostariamos usar cookies para melhorar a sua experiência.
           </Description>
 
-          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '1rem'}}>
+          <div style={{width:'80%',display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem'}}>
+            <Span>Ver privacidade</Span>
             <Button onClick={() => handleShow(false)}>Aceitar</Button>
-            <Span>Declinar</Span>
           </div>
         </Content>
       </Container>

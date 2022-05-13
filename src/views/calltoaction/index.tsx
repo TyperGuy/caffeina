@@ -1,5 +1,5 @@
 import {FC} from 'react'
-import img from '../../assets/images/feature-1@2x.webp';
+import img from '../../assets/images/girls.jpg';
 import Image from 'next/image';
 import {Container, Content, Underlined} from './Calltoaction.styles';
 import Button from '../../components/button/Button';
@@ -10,17 +10,17 @@ const Props : ButtonType = {
   hoverColor:"#222",
   background: "#FFC32B",
   hoverBackground:"#FFC32B",
-  title : "Tenho algo incrível para partilhar"
+  title : "Seja Palestrante"
 }
 
 const Calltoaction: FC = () => {
     return (
       <Container>
-        <div>
+        <div style={{display: 'flex', flexDirection:'column', gap:'2rem',maxWidth:"500px"}}>
           <Content>Ouvimos de quem melhor sabe dizer onde está o <Underlined> Sucesso</Underlined></Content>
           <Button {...Props}/>
         </div>
-        <Image width={651} height={513} src={img}/>
+        <Image width={500} height={350} src={img}/>
       </Container>
     )
 

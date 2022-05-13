@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
+  height : 500px;
   max-width: 1128px;
   width: 1128px;
   display: flex;
@@ -11,11 +12,9 @@ export const Container = styled.div`
 export const Content = styled.h1`
   line-height: 1.1;
   font-weight: 700;
-  max-width: 571px;
-  margin-bottom: 16px;
   color: #222;
-  font-size: calc(23.3333px + 1.85185vw);
-  margin-bottom: 2rem;
+  font-size: calc(15.3333px + 1.85185vw);
+  margin:0;
 `
 
 export const Underlined = styled.strong`
