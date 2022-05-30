@@ -36,12 +36,6 @@ export const Content = styled.div`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `
 
-export const Image = styled.img`
-  width: 100px;
-  height: 100px;
-  margin-top: -65px;
-`
-
 export const Description = styled.p`
   font-size: 1rem;
   width: 80%;

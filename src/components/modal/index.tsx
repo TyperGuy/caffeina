@@ -1,7 +1,9 @@
 // @ts-nocheck
 import { FC, useImperativeHandle, forwardRef, useState, useCallback, } from 'react';
 
-import { Container, Content, Image, Title, Description, Button, Span } from './modal.styles';
+import { Container, Content, Title, Description, Button, Span } from './modal.styles';
+import Image from 'next/image';
+import img from '../../../public/cookie.svg';
 
 const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
   const [showModal, setShowModal] = useState(false);
@@ -16,7 +18,9 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
     return (
       <Container>
         <Content>
-          <Image src="/cookie.png"/>
+          <div style={{marginTop:-65}}>
+             <Image  height={90} width={120} src="/cookie.svg"/>
+          </div>
           <Description>
             Nós nos importamos com a sua privacidade, e gostariamos usar cookies para melhorar a sua experiência.
           </Description>
