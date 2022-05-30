@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -22,6 +22,9 @@ export const Container = styled.div`
     &:hover{
       color: #FFC32B;
     }
+  }
+  &:hover{
+    background-color: #222;
   }
 `
 

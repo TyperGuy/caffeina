@@ -18,6 +18,7 @@ export const Content = styled.h1`
 `
 
 export const Underlined = styled.strong`
+
   background: rgba(0, 0, 0, 0) linear-gradient(to right, #cc3333, #cc00ff) repeat scroll 0% 0% padding-box text;
   -webkit-text-fill-color: transparent;
   position: relative;
