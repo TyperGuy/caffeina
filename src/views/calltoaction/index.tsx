@@ -4,6 +4,7 @@ import Image from 'next/image';
 import {Container, Content, Underlined} from './Calltoaction.styles';
 import Button from '../../components/button/Button';
 import {ButtonType} from 'myButton';
+import { Horse, Heart, Cube } from "phosphor-react";
 
 const Props : ButtonType = {
   color: "#222",
@@ -21,6 +22,7 @@ const Calltoaction: FC = () => {
           <Button {...Props}/>
         </div>
         <Image width={500} height={350} src={img}/>
+        <Horse/>
       </Container>
     )
 
