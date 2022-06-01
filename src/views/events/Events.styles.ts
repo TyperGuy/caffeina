@@ -13,9 +13,22 @@ export const ChildContainer = styled.div`
   width: 1128px;
   height: 400px;
   display: flex;
+  flex-direction: column;
+  cursor: pointer;
+`;
+
+export const CardContainer = styled.div`
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
+`;
+export const Slider = styled.div`
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 

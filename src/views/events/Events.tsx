@@ -1,7 +1,6 @@
-import FQA from 'components/fqa';
-import React from 'react';
-import {Container,ChildContainer} from './Events.styles';
 
+import {Container,ChildContainer,CardContainer,Slider} from './Events.styles';
+import {ChatTeardropDots} from 'phosphor-react'
 
 
 const Events : React.FC =()=>{
@@ -10,11 +9,16 @@ const Events : React.FC =()=>{
     <Container>
       <ChildContainer>
         <h1>Eventos futuros</h1>
-      </ChildContainer>
+        <Slider>
+          
+          <CardContainer>
 
-      <FQA/>
+          </CardContainer>
+        </Slider>
+      </ChildContainer>
+      
     </Container>
   )
 }
-
+  
 export default Events;
