@@ -10,7 +10,6 @@ const Events : React.FC =()=>{
       <ChildContainer>
         <h1>Eventos futuros</h1>
         <Slider>
-          
           <CardContainer>
 
           </CardContainer>

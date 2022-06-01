@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Container } from './landing-page-float-buttons.styles'
-import {BsFillArrowUpCircleFill as Arrow} from 'react-icons/bs';
+import {ArrowUp} from 'phosphor-react';
 
 export const FloatingButton: FC = () => {
   const sendToTop = () => {
@@ -10,10 +10,11 @@ export const FloatingButton: FC = () => {
 
   return(
     <Container >
-          <Arrow
-            className="top"
-            onClick={() => sendToTop()}
-          />
+      <ArrowUp
+       className='top'
+       onClick={()=>sendToTop()}
+       size={20}
+      />
     </Container>
   )
 }
