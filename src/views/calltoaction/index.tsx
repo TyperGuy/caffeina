@@ -1,11 +1,8 @@
 import {FC} from 'react'
-import img from '../../assets/images/girls.jpg';
-import Image from 'next/image';
 import {Container, Content, Underlined} from './Calltoaction.styles';
-import Button from '../../components/button/Button';
 import {ButtonType} from 'myButton';
 import PlayButton from 'components/play-button/Play';
-
+import Form from 'components/speaker-form/Form';
 const Props : ButtonType = {
   color: "#222",
   hoverColor:"#222",
@@ -21,7 +18,7 @@ const Calltoaction: FC = () => {
           <Content>Ouvimos de quem melhor sabe dizer onde está o <Underlined> Sucesso</Underlined></Content>
           <PlayButton/>
         </div>
-        <Image width={500} height={350} src={img}/>
+        <Form/>
       </Container>
     )
 

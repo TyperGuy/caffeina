@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "antd": "^4.19.2",
+    "framer-motion": "^6",
     "next": "12.1.0",
     "phosphor-react": "^1.4.1",
     "react": "17.0.2",

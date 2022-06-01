@@ -7,7 +7,12 @@ interface CustomProps extends AppProps {
 }
 
 function MyApp({ Component, pageProps }: CustomProps) {
-  return <Component {...pageProps} />;
+  return (
+  
+      <Component {...pageProps} />
+   
+  )
+   
 }
 
 export default MyApp;
