@@ -45,7 +45,7 @@ const LandingPage: NextPage = () => {
       </div>
       <Calltoaction/>
       <Events/>
-      <FloatingButton isOnBottom={isScrolling} />
+      <FloatingButton/>
       <Modal modalRef={modalRef} />
     </div>
   )

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import {Container, Content, Underlined} from './Calltoaction.styles';
 import Button from '../../components/button/Button';
 import {ButtonType} from 'myButton';
-import { Horse, Heart, Cube } from "phosphor-react";
+import PlayButton from 'components/play-button/Play';
 
 const Props : ButtonType = {
   color: "#222",
@@ -19,10 +19,9 @@ const Calltoaction: FC = () => {
       <Container>
         <div style={{display: 'flex', flexDirection:'column', gap:'2rem',maxWidth:"500px"}}>
           <Content>Ouvimos de quem melhor sabe dizer onde está o <Underlined> Sucesso</Underlined></Content>
-          <Button {...Props}/>
+          <PlayButton/>
         </div>
         <Image width={500} height={350} src={img}/>
-        <Horse/>
       </Container>
     )
 

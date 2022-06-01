@@ -12,7 +12,7 @@ const Props : ButtonType = {
   hoverColor:"#FFF",
   background: "#222",
   hoverBackground:"#222",
-  title : Constants.buttons.signup
+  title : 'SEJA MEMBRO'
 }
 
 
