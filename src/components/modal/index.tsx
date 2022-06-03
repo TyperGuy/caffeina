@@ -19,7 +19,7 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
       <Container>
         <Content>
           <div style={{marginTop:-65}}>
-             <Image  height={90} width={120} src="/cookie.svg"/>
+             <Image  height={60} width={90} src="/cookie.svg"/>
           </div>
           <Description>
             Nós nos importamos com a sua privacidade, e gostariamos usar cookies para melhorar a sua experiência.
