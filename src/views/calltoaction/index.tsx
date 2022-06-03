@@ -2,7 +2,7 @@ import {FC} from 'react'
 import {Container, Content, Underlined} from './Calltoaction.styles';
 import {ButtonType} from 'myButton';
 import PlayButton from 'components/play-button/Play';
-import Form from 'components/speaker-form/Form';
+import Form from 'components/speaker-form';
 const Props : ButtonType = {
   color: "#222",
   hoverColor:"#222",
@@ -21,8 +21,6 @@ const Calltoaction: FC = () => {
         <Form/>
       </Container>
     )
-
-
 }
 
 export default Calltoaction;
