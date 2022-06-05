@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Container,Input,Textarea,Button} from './Form.styles';
 import {ButtonType} from 'myButton';
 
@@ -12,6 +12,8 @@ const Props : ButtonType = {
 
 
 const Form : React.FC =()=>{
+
+  const [chars,setChars] = useState(0);
 
   return(
     <Container>
@@ -32,7 +34,21 @@ const Form : React.FC =()=>{
       >
         <Input type="text" placeholder='Nome Completo' />
         <Input type="text" placeholder='Email' />
-        <Textarea placeholder="Sobre ti..." name="" id="" cols={30} rows={7}/>
+        <Textarea
+         placeholder="Sobre ti..."
+         name="" id=""
+         cols={30}
+         rows={7}
+         onChange={(e)=>setChars(e.target.value.length)}
+         />
+        <span 
+          style={{
+              alignSelf:'end',
+              marginTop:'-21px',
+              fontSize:'.8rem'
+          }}>
+            {chars + '/300'}
+        </span>
         <Button>Enviar</Button>
       </form>
     </Container>
