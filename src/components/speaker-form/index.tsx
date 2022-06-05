@@ -14,6 +14,13 @@ const Props : ButtonType = {
 const Form : React.FC =()=>{
 
   const [chars,setChars] = useState(0);
+  const controlChars = (chars:number) =>{
+    if(chars<=300)
+      setChars(chars)
+    else
+      console.log("está lá")
+       
+  }
 
   return(
     <Container>
@@ -39,7 +46,8 @@ const Form : React.FC =()=>{
          name="" id=""
          cols={30}
          rows={7}
-         onChange={(e)=>setChars(e.target.value.length)}
+         maxLength={300}
+         onChange={(e)=>controlChars(e.target.value.length)}
          />
         <span 
           style={{
