@@ -26,7 +26,7 @@ export const Input = styled.input`
   background-color: #d9d9d9;
   outline: none;
   padding: 1.5rem 1rem;
-  transition: all 0.5s ease-in;
+  transition: all 0.05s ease-in;
   font-size:1rem;
   &:focus{
     border: 2px solid #FFC32B;
@@ -40,7 +40,7 @@ export const Textarea = styled.textarea`
   background-color: #d9d9d9;
   outline: none;
   padding: 1rem;
-  transition: all 0.5s ease-in;
+  transition: all 0.05s ease-in;
   font-size:1rem;
   resize: none;
   &:focus{
