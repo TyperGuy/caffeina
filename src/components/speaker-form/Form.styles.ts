@@ -48,13 +48,13 @@ export const Textarea = styled.textarea`
   }
 `;
 export const Button = styled.button`
-  height: 50px;
+  height: 55px;
   width: 100%;
   background:#222;
   color: #fff;
   border: none;
   border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.05s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding: 0 1.5rem;
   cursor: pointer;
