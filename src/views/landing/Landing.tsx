@@ -1,11 +1,12 @@
 import type { NextPage } from 'next';
 import { useEffect, useState, useRef } from 'react';
-import Header from '../../components/header/Header';
+import Header from '../../components/header';
 import React from 'react';
 import FloatingButton from 'components/landing-page-float-buttons';
 import Modal from 'components/modal';
 import Calltoaction from '../calltoaction/index';
-import Events from '../events/Events';
+import Events from '../events';
+import Sponsors from 'views/sponsors';
 
 
 const LandingPage: NextPage = () => {
@@ -44,6 +45,7 @@ const LandingPage: NextPage = () => {
         <Header/>
       </div>
       <Calltoaction/>
+      <Sponsors/>
       <Events/>
       <FloatingButton/>
       <Modal modalRef={modalRef} />

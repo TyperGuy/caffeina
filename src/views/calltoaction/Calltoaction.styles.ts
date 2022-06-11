@@ -19,15 +19,15 @@ export const Content = styled.h1`
 
 export const Underlined = styled.strong`
 
-  background: rgba(0, 0, 0, 0) linear-gradient(to right, #cc3333, #cc00ff) repeat scroll 0% 0% padding-box text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background: #FFC32B;
+  -webkit-text-fill-color: #FFC32B;
   position: relative;
   display: inline-block;
   &:after{
     content: "";
     position: absolute;
     display: block;
-    border-top: 4.9px solid #FFC32B;
+    border-top: 4.9px solid #222;
     border-radius: 47%;
     left: -6px;
     right: -6px;
@@ -36,4 +36,9 @@ export const Underlined = styled.strong`
     transform: rotate(-0.6deg);
   }
 `
+export const Image = styled.img`
+  height: 450px;
+`
+
+
 
