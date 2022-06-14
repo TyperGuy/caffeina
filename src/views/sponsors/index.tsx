@@ -14,7 +14,7 @@ const Sponsors: FC = () => {
             flexDirection:'row',
             gap:'2.5rem',
             alignItems:'center',
-            marginBottom:'2rem'
+            marginBottom:'5rem'
           }}>
             <Logo src="bai.png" alt="" />
             <Logo src="ensa.png" alt="" />
@@ -24,9 +24,20 @@ const Sponsors: FC = () => {
               onMouseEnter={()=>setIsHover(true)}
               onMouseLeave={()=>setIsHover(false)}
               >
-              <PlusCircle style={{margin:'1rem'}}  size={32} weight="fill" />
+              <PlusCircle 
+                style={
+                  {
+                    margin:'1rem',
+                  }
+                } color="inherit"  size={32} weight="fill" />
               {isHover&&
-                <span style={{marginRight:'1.5rem'}} >
+                <span style={
+                  {
+                    marginRight:'1.5rem',
+                    color:'inherit',
+                    fontWeight:600
+                  }
+                } >
                   SUA EMPRESA
                 </span>}
             </Button>

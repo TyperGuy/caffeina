@@ -34,8 +34,8 @@ export const Button = styled.div`
   transition: all .5s ease-in-out;
   cursor: pointer;
   &:hover{
-    background-color: #222;
-    color: #fff;
+    background-color: #FFC32B;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   }
 `
 

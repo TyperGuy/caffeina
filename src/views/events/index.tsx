@@ -1,6 +1,7 @@
 
 import {Container,ChildContainer,CardContainer,Slider} from './Events.styles';
-import {ChatTeardropDots} from 'phosphor-react'
+import {ChatTeardropDots} from 'phosphor-react';
+import Card from '../../components/meetupcard';
 
 
 const Events : React.FC =()=>{
@@ -11,7 +12,7 @@ const Events : React.FC =()=>{
         <h1>Eventos futuros</h1>
         <Slider>
           <CardContainer>
-
+            <Card/>
           </CardContainer>
         </Slider>
       </ChildContainer>
