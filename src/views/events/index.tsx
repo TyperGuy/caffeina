@@ -33,7 +33,8 @@ const Events : React.FC =()=>{
             display: 'flex',
             alignItems: 'center',
             gap:'.3rem',
-            color:'#2b79b4'
+            color:'#2b79b4',
+            marginBottom:40
           }}>
           <span>Ver mais</span>
           <ArrowUpRight size={18}/>

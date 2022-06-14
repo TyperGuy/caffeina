@@ -23,7 +23,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 400px;
-  height: 225px;
+  height: 210px;
   background-color: #fff;
   position: relative;
   margin: 20px;
@@ -33,6 +33,7 @@ export const Content = styled.div`
   justify-content: center;
   gap:1rem;
   border-radius: 8px;
+  border: 1px solid #ccc;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 `
 
@@ -46,7 +47,7 @@ export const Description = styled.p`
 `
 
 export const Button = styled.button`
-  width: 150px;
+  width: 190px;
   height: 40px;
   background: #222;
   font-weight: 400;

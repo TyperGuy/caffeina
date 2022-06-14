@@ -7,6 +7,7 @@ import Modal from 'components/modal';
 import Calltoaction from '../calltoaction/index';
 import Events from '../events';
 import Sponsors from 'views/sponsors';
+import Footer from '../../components/footer'; 
 
 
 const LandingPage: NextPage = () => {
@@ -47,6 +48,7 @@ const LandingPage: NextPage = () => {
       <Calltoaction/>
       <Sponsors/>
       <Events/>
+      <Footer/>
       <FloatingButton/>
       <Modal modalRef={modalRef} />
     </div>

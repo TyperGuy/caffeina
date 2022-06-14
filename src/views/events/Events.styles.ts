@@ -13,6 +13,7 @@ export const ChildContainer = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin: 20px 0;
 `;
 
 export const CardContainer = styled.div`

@@ -18,15 +18,15 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
     return (
       <Container>
         <Content>
-          <div style={{marginTop:-65}}>
-             <Image  height={60} width={90} src="/cookie.svg"/>
+          <div style={{marginTop:-70}}>
+             <Image  height={65} width={90} src="/cookie.svg"/>
           </div>
           <Description>
             Nós nos importamos com a sua privacidade, e gostariamos usar cookies para melhorar a sua experiência.
           </Description>
 
           <div style={{width:'80%',display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem'}}>
-            <Span>Ver privacidade</Span>
+            <Span>Cancelar</Span>
             <Button onClick={() => handleShow(false)}>Aceitar</Button>
           </div>
         </Content>
