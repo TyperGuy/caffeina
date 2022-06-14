@@ -37,7 +37,7 @@ export const Underlined = styled.strong`
   }
 `
 export const Image = styled.img`
-  height: 450px;
+  height: 400px;
 `
 
 

@@ -10,7 +10,7 @@ const Calltoaction: FC = () => {
       <Container>
         <div style={{display: 'flex', flexDirection:'column', gap:'2rem'}}>
           <Content>Ouvimos de quem melhor sabe dizer onde está o <Underlined> Sucesso</Underlined></Content>
-          <div 
+          <div
             style={{
               display: 'flex',
               gap: '1rem'
@@ -21,10 +21,10 @@ const Calltoaction: FC = () => {
               <PlayCircle size={32} weight="fill" />
               QUERO SER
             </PlayButton>
-      
+
           </div>
         </div>
-        <Image src="_BLM_PROTESTS.svg" alt="Protest" />
+        <Image src="protest.png" alt="Protest" />
       </Container>
     )
 }
