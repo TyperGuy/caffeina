@@ -29,7 +29,7 @@ const Sponsors: FC = () => {
                   {
                     margin:'1rem',
                   }
-                } color="inherit"  size={32} weight="fill" />
+                } color={!isHover?'#929292cc':'inherit'}  size={32} weight="fill" />
               {isHover&&
                 <span style={
                   {

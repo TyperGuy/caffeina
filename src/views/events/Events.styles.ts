@@ -16,6 +16,7 @@ export const ChildContainer = styled.div`
 `;
 
 export const CardContainer = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

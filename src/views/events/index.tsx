@@ -13,6 +13,8 @@ const Events : React.FC =()=>{
         <Slider>
           <CardContainer>
             <Card/>
+            <Card/>
+            <Card/>
           </CardContainer>
         </Slider>
       </ChildContainer>
