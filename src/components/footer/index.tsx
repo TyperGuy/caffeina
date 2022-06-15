@@ -1,15 +1,20 @@
 import { FacebookLogo } from 'phosphor-react';
 import { TiSocialInstagramCircular as Insta,TiSocialLinkedinCircular as Linkedin} from "react-icons/ti";
 import Styles from './Footer.module.scss';
+import {Input} from '../inputs/Inputs.style';
+import Button from 'components/button';
+import Image from 'next/image';
 
 
 const Footer:React.FC = () =>(
   <div className={Styles.container}>
     <div className={Styles.childContainer}>
       <div className={Styles.column}>
-        <h3>Logtipo</h3>
-        <p>Caffeina é uma comunidade sem fins lucrativos, 
-          que foi criada em 2021 com o inruito de conectar 
+        <img
+         style={{width:150}}
+         src="/logotipo.png"/>
+        <p>Caffeina é uma comunidade sem fins lucrativos,
+          que foi criada em 2021 com o inruito de conectar
           a comunidade aos líderes juvenis angolanos
         </p>
 
@@ -39,11 +44,16 @@ const Footer:React.FC = () =>(
             <span>Sugestões</span>
          </div>
       </div>
-      
+
       <div className={Styles.column}>
         <p className={Styles.title}>NEWSLATTER</p>
-         <div>
-
+          <Input
+              placeholder="Seu Email"
+          />
+          <div style={{marginTop:10}}>
+            <Button>
+              Subscrever
+            </Button>
          </div>
       </div>
 
