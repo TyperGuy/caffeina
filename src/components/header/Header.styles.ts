@@ -14,6 +14,7 @@ export const Container = styled.div`
 `;
 
 export const ChildContainer = styled.div`
+  height: 68px;
   display: flex;
   align-items: center;
   gap:1.5rem;
@@ -24,6 +25,15 @@ export const ChildContainer = styled.div`
 export const Logo = styled(Image) `
   max-height: 60px;
   max-width: 60px
+`
+
+export const Item = styled.div<{isActive: boolean}> `
+  height: 100%;
+  padding: 0  0.5rem;
+  display: grid;
+  place-items: center;
+  color: ${(props)=>props.isActive? '#F34747' : '#222'};
+  border-bottom: 3px solid ${(props)=>props.isActive? '#F34747' : '#fff'};
 `
 
 
