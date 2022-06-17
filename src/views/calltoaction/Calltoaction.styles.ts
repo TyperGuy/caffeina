@@ -19,8 +19,8 @@ export const Content = styled.h1`
 
 export const Underlined = styled.strong`
 
-  -webkit-background: #FFC32B;
-  -webkit-text-fill-color: #FFC32B;
+  -webkit-background: #F34747;
+  -webkit-text-fill-color: #F34747;
   position: relative;
   display: inline-block;
   &:after{
