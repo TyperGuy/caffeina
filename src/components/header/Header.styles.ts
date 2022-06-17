@@ -36,6 +36,9 @@ export const Item = styled.div<{isActive: boolean}> `
   font-weight: ${(props)=>props.isActive? 'bold' : 'normal'};
   color: ${(props)=>props.isActive? '#F34747' : '#222'};
   border-bottom: 3px solid ${(props)=>props.isActive? '#F34747' : '#fff'};
+  &:hover{
+    background-color:#eee;
+  }
 `
 
 
