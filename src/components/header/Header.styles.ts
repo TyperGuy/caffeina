@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from 'next/image';
+import Link from 'next/link';
 
 // Styled component named StyledButton
 export const Container = styled.div`
@@ -19,6 +20,15 @@ export const ChildContainer = styled.div`
   align-items: center;
   gap:1.5rem;
   cursor: pointer;
+`;
+
+export const A = styled.a`
+  text-decoration: none;
+`;
+
+export const Mylink = styled(Link)`
+  height: 100%;
+  width: 100%;
 `;
 
 

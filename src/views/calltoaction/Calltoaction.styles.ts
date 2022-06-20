@@ -8,6 +8,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 70px;
+
 `;
 export const Content = styled.h1`
   line-height: 1.1;
