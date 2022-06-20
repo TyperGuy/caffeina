@@ -16,13 +16,23 @@ const FQA: NextPage = () => {
   return(
     <div style={Style}>
       <div style={Style1}>
-        {
-          Questions.map(question =>
-            <Acordion
-             {...question}
-             />
-          )
-        }
+        <h1>Perguntas mais frequêntes</h1>
+        <span>Um compilado das perguntas que temos recebido com mais frequência.
+          Se a tua pergunta não está a qui listada, não te preocupes tu podes
+          perguntar <a href="" >aqui</a>!
+        </span>
+        <br />
+        <br />
+        <br />
+        <div>
+          {
+            Questions.map(question =>
+              <Acordion
+              {...question}
+              />
+            )
+          }
+        </div>
       </div>
     </div>
   )
