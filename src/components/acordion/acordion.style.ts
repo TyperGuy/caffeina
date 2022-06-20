@@ -4,7 +4,8 @@ export const AcordionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  padding: 10px 0 ;
+  transition: all 0.05s ease-in-out;
   `
 export const PlayButton = styled.button`
   height: 55px;

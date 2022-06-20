@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
-import  Acordion  from 'components/acordion';
-
-
+import  Acordion,{QuestionType}  from 'components/acordion';
+import Questions from '../international/pt-pt/fqa.json';
+import { useState } from 'react';
 
 const Style ={
   width:'100%',
@@ -13,11 +13,16 @@ const Style1 ={
   width:'800px',
 }
 const FQA: NextPage = () => {
-  
   return(
     <div style={Style}>
       <div style={Style1}>
-        <Acordion/>
+        {
+          Questions.map(question =>
+            <Acordion
+             {...question}
+             />
+          )
+        }
       </div>
     </div>
   )
