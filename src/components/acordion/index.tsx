@@ -55,7 +55,7 @@ const Acordion: FC <QuestionType> = ({...props}) => {
         height: '1px',
         marginTop: '1rem',
         transition: 'all 0.5s ease-in-out',
-        backgroundColor: isOpen ? '#F34747' : '#ccc'
+        backgroundColor: isOpen ? '#F34747' : '#d9e3eb'
         }}>
         </div>
       </AcordionContainer>
