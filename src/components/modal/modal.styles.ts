@@ -23,9 +23,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 400px;
-  height: 210px;
+  height: 260px;
   background-color: #fff;
-  position: relative;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -47,14 +46,16 @@ export const Description = styled.p`
 `
 
 export const Button = styled.button`
-  width: 190px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   background: #222;
   font-weight: 400;
-  border: none;
+  border:3px solid #222;
+  box-sizing: border-box;
+  cursor: pointer;
   color: #fff;
   border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   &:hover{
     background-color: #FFC32B;
@@ -68,9 +69,24 @@ export const Span = styled.button`
   color: #808080;
   font-weight: 300;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
   &:hover{
    color: #222;
-   font-weight: 500;
   }
 `
+
+export const Title = styled.p`
+  font-size: 1.3rem;
+  font-weight: 600 ;
+`
+
+export const Linker = styled.a`
+  text-decoration: underline;
+  font-weight: 600 ;
+  cursor: pointer;
+  &:hover{
+   color:#F34747;
+  }
+`
+
 
