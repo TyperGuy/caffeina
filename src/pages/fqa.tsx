@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import  Acordion,{QuestionType}  from 'components/acordion';
 import Questions from '../international/pt-pt/fqa.json';
 import {Input}  from 'components/speaker-form/Form.styles';
-import { useState } from 'react';
 
 const Style ={
   width:'100%',

@@ -17,7 +17,8 @@ const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
               display:'flex',
               flexDirection:'column',
               alignItems:'center',
-              border: '2px solid #222',
+              borderTop: '1px solid #ccc',
+              borderBottom: '1px solid #ccc'
             }}>
               <p
               style={{

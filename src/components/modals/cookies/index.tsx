@@ -8,7 +8,7 @@ import Reasons from './reasons';
 
 const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
   const [showModal, setShowModal] = useState(false);
-  const [wantToChoose,setWantToChoose] = useState(false)
+  const [wantToChoose,setWantToChoose] = useState(true)
 
   const handleShow = useCallback((show: boolean) => setShowModal(show), [])
 
@@ -21,7 +21,7 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
       <Container>
         {
           wantToChoose?
-          <Settings setWantToChoose={setWantToChoose}/>:
+          <Dialog setWantToChoose={setWantToChoose}/>:
           <Reasons setWantToChoose={setWantToChoose}/>
         }
 

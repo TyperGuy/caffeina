@@ -27,7 +27,8 @@ const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
               alignItems:'center',
               margin:'16px 0',
               padding:'16px 0',
-              border: '2px solid #222'
+              borderTop: '1px solid #ccc',
+              borderBottom: '1px solid #ccc'
             }}>
             <Section>
               <p>Alguma coisa</p>
