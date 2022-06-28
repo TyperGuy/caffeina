@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import { useEffect, useState, useRef } from 'react';
 import React from 'react';
 import FloatingButton from 'components/landing-page-float-buttons';
-import Modal from 'components/modal';
+import Modal from 'components/modals/cookies';
 import Calltoaction from '../views/calltoaction/';
 import Events from '../views/events';
 import Sponsors from 'views/sponsors';
