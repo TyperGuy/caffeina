@@ -6,9 +6,14 @@ import Dialog from './dialog';
 import Reasons from './reasons';
 
 
+const typeModal ={
+  ask : 'askModal',
+  choose : 'chooseModal',
+  information : 'infModal'
+}
 const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
   const [showModal, setShowModal] = useState(false);
-  const [wantToChoose,setWantToChoose] = useState(true)
+  const [targetModal,setTargetModal] = useState(typeModal.ask);
 
   const handleShow = useCallback((show: boolean) => setShowModal(show), [])
 
@@ -20,11 +25,17 @@ const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
     return (
       <Container>
         {
-          wantToChoose?
-          <Dialog setWantToChoose={setWantToChoose}/>:
-          <Reasons setWantToChoose={setWantToChoose}/>
+          (targetModal===typeModal.ask) &&
+          <Dialog setTargetModal={setTargetModal}/>
         }
-
+        {
+          (targetModal===typeModal.information) &&
+          <Reasons setTargetModal={setTargetModal}/>
+        }
+        {
+          (targetModal===typeModal.choose) &&
+          <Settings setTargetModal={setTargetModal}/>
+        }
       </Container>
     )
   }

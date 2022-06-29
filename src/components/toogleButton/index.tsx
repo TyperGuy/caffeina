@@ -11,12 +11,12 @@ const Button : React.FC <{enable: boolean}> = ({enable})=> {
      enable={enabled}>
       <div
         style={{
-        width: '20px',
-        height: '20px',
+        width: '15px',
+        height: '15px',
         position:'absolute',
         borderRadius: '50%',
         backgroundColor: enabled? '#FFC32B':'#fff',
-        transform: enabled? 'translateX(20px)':'translateX(0)',
+        transform: enabled? 'translateX(22px)':'translateX(2px)',
         transition: 'all 0.3s ease-in-out'
       }}></div>
     </Container>

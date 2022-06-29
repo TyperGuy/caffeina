@@ -1,21 +1,21 @@
 // @ts-nocheck
-import { FC} from 'react';
 import {Section,Content, Title, Description, Button, Span,Linker } from './modal.styles';
 import Toogle from '../../../toogleButton';
 
 
-const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
+const Settings: React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetModal}) => {
 
     return (
         <Content>
           <div style={{width:'80%',marginTop:'10px',display:'flex',gap:10,alignItems:'center'}}>
-             <img style={{height:'46px', width:'60px'}} src="/cookie.svg"/>
+             <img style={{height:'46px', width:'65px'}} src="/cookie.svg"/>
              <Title>Definição de Cookies</Title>
           </div>
           <Section>
             <Description>
               Nós nos importamos com a sua privacidade, e precisamos usar
-              <Linker> políticas de cookies </Linker> para melhorar a sua
+              <Linker onClick={() => setTargetModal('infModal')
+              }> políticas de cookies </Linker> para melhorar a sua
               experiência.
             </Description>
           </Section>
@@ -31,21 +31,21 @@ const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
               borderBottom: '1px solid #ccc'
             }}>
             <Section>
-              <p>Alguma coisa</p>
+              <p>Cookies de sessão</p>
               <Toogle enable={true}/>
             </Section>
             <Section>
-              <p>Alguma coisa</p>
+              <p>Cookies de persistência</p>
               <Toogle enable={true}/>
             </Section>
             <Section>
-              <p>Alguma coisa</p>
+              <p>Cookies adicionais</p>
               <Toogle enable={true}/>
             </Section>
           </div>
           <div style={{width:'80%',display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem'}}>
             <Span
-              onClick={() => setWantToChoose(false)
+              onClick={() => setTargetModal('askModal')
               }>
                 Quero voltar
               </Span>

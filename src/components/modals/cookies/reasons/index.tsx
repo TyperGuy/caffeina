@@ -4,7 +4,7 @@ import {Section,Content, Title, Description, Button, Span,Linker } from './modal
 import Toogle from '../../../toogleButton';
 
 
-const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
+const Settings: React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetModal})=> {
 
     return (
         <Content>
@@ -35,7 +35,7 @@ const Settings: FC <{setWantToChoose:boolean}> = ({setWantToChoose}) => {
           </div>
           <div style={{width:'80%',display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem'}}>
             <Span
-              onClick={() => setWantToChoose(false)
+              onClick={() => setTargetModal('askModal')
               }>
                 Quero voltar
               </Span>
