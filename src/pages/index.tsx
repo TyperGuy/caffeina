@@ -38,7 +38,6 @@ const Home: NextPage = () => {
       <Sponsors/>
       <Events/>
       <FloatingButton/>
-      <Modal modalRef={modalRef} />
     </div>
   )
 };

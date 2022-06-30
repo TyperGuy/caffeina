@@ -11,36 +11,29 @@ const typeModal ={
   choose : 'chooseModal',
   information : 'infModal'
 }
-const Modal: FC<{ modalRef: any }> = ({ modalRef }) => {
-  const [showModal, setShowModal] = useState(false);
+const Modal: FC = () => {
+  const [showModal, setShowModal] = useState(true);
   const [targetModal,setTargetModal] = useState(typeModal.ask);
 
-  const handleShow = useCallback((show: boolean) => setShowModal(show), [])
+ if(showModal)
+  return (
+    <Container>
+      {
+        (targetModal===typeModal.ask) &&
+        <Dialog setShowModal={setShowModal} setTargetModal={setTargetModal}/>
+      }
+      {
+        (targetModal===typeModal.information) &&
+        <Reasons setShowModal={setShowModal} setTargetModal={setTargetModal}/>
+      }
+      {
+        (targetModal===typeModal.choose) &&
+        <Settings setShowModal={setShowModal} setTargetModal={setTargetModal}/>
+      }
+    </Container>
+  )
 
-  useImperativeHandle(modalRef, () => ({
-    handleShow,
-  }))
-
-  if(showModal) {
-    return (
-      <Container>
-        {
-          (targetModal===typeModal.ask) &&
-          <Dialog setTargetModal={setTargetModal}/>
-        }
-        {
-          (targetModal===typeModal.information) &&
-          <Reasons setTargetModal={setTargetModal}/>
-        }
-        {
-          (targetModal===typeModal.choose) &&
-          <Settings setTargetModal={setTargetModal}/>
-        }
-      </Container>
-    )
-  }
-
-  return <></>
+  return null
 
 }
 

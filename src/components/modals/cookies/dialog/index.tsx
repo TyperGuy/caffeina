@@ -1,7 +1,7 @@
 
 import {Content, Title, Description, Button, Span,Linker } from './modal.styles';
 
-const Dialog : React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetModal}) =>{
+const Dialog : React.FC <{setShowModal:(showModal:boolean) => void,setTargetModal:(status:string)=>void}> = ({setTargetModal,setShowModal}) =>{
 
   return (
       <Content>
@@ -21,7 +21,7 @@ const Dialog : React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetMo
           }>
             Me deixa escolher
           </Span>
-          <Button >Aceitar</Button>
+          <Button onClick={() => setShowModal(false)}>Aceitar</Button>
         </div>
       </Content>
   )

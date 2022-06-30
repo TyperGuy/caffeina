@@ -1,9 +1,9 @@
-// @ts-nocheck
+
 import {Section,Content, Title, Description, Button, Span,Linker } from './modal.styles';
 import Toogle from '../../../toogleButton';
 
 
-const Settings: React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetModal}) => {
+const Settings: React.FC <{setShowModal:(showModal:boolean) => void,setTargetModal:(status:string)=>void}> = ({setShowModal,setTargetModal}) => {
 
     return (
         <Content>
@@ -49,7 +49,7 @@ const Settings: React.FC <{setTargetModal:(status:string)=>void}> = ({setTargetM
               }>
                 Quero voltar
               </Span>
-            <Button onClick={() => handleShow(false)}>Terminar</Button>
+            <Button onClick={() => setShowModal(false)}>Terminar</Button>
           </div>
         </Content>
     )
