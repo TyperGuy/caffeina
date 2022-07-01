@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { FC, useImperativeHandle, forwardRef, useState, useCallback, } from 'react';
 import { Container} from './modal.styles';
 import Settings from './settings';
@@ -37,4 +36,5 @@ const Modal: FC = () => {
 
 }
 
-export default forwardRef(Modal);
+export default Modal;
+

@@ -1,11 +1,14 @@
-import {FC} from 'react';
+import {FC, useState} from 'react';
 import {Container, Content, Underlined,Image} from './Calltoaction.styles';
 import Button from '../../components/button';
 import PlayButton from '../../components/button/PlayButton';
 import { PlayCircle } from 'phosphor-react';
+import Modal from '../../components/modals/generic';
 
 
 const Calltoaction: FC = () => {
+
+   const [isOpen,setIsOpen] =useState(false);
     return (
       <Container>
         <div style={{display: 'flex', flexDirection:'column', gap:'2rem'}}>
@@ -25,6 +28,9 @@ const Calltoaction: FC = () => {
           </div>
         </div>
         <Image src="protest.png" alt="Protest" />
+        <Modal isOpen={true} >
+
+        </Modal>
       </Container>
     )
 }
