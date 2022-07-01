@@ -1,5 +1,16 @@
-import styled from 'styled-components';
+import styled ,{keyframes} from 'styled-components';
 
+const slowFade = keyframes`
+  from{
+    opacity:0;
+    transform:scale(0);
+  }
+
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+`
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -12,6 +23,8 @@ export const Container = styled.div`
   place-items: center;
 `
 
+
+
 export const ContentContainer = styled.div`
   width: 800px;
   height: 80vh;
@@ -20,6 +33,8 @@ export const ContentContainer = styled.div`
   display: flex ;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  animation-name:${slowFade};
+  animation-duration: .3s;
 `
 export const Row = styled.div`
   width: 100%;
