@@ -4,6 +4,7 @@ import Button from '../../components/button';
 import PlayButton from '../../components/button/PlayButton';
 import { PlayCircle } from 'phosphor-react';
 import Modal from '../../components/modals/generic';
+import Form from 'components/speaker-form';
 
 
 const Calltoaction: FC = () => {
@@ -20,16 +21,15 @@ const Calltoaction: FC = () => {
             }}
           >
             <Button>QUERO SER PALESTRANTE</Button>
-            <PlayButton>
+            <PlayButton onClick={setIsOpen}>
               <PlayCircle size={32} weight="fill" />
-              QUERO SER
+                QUERO SER
             </PlayButton>
-
           </div>
         </div>
         <Image src="protest.png" alt="Protest" />
-        <Modal isOpen={true} >
-
+        <Modal setShowModal={setIsOpen} isOpen={isOpen} >
+         
         </Modal>
       </Container>
     )

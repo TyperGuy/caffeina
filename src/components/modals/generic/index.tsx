@@ -7,11 +7,9 @@ const typeModal ={
   choose : 'chooseModal',
   information : 'infModal'
 }
-const Modal: FC <{isOpen:boolean}> = ({children,isOpen}) => {
-  const [showModal, setShowModal] = useState(isOpen);
-  const [targetModal,setTargetModal] = useState(typeModal.ask);
+const Modal: FC <{isOpen:boolean,setShowModal:(isOpen:boolean)=>void} > = ({children,isOpen,setShowModal}) => {
 
- if(showModal)
+ if(isOpen)
   return (
     <Container>
       <Child>
@@ -20,6 +18,7 @@ const Modal: FC <{isOpen:boolean}> = ({children,isOpen}) => {
           <X size={16} />
         </CloseBtn>
       </Child>
+      {children}
     </Container>
   )
 

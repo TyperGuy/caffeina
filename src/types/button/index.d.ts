@@ -1,10 +1,6 @@
 declare module 'myButton' {
   type ButtonType = {
-    color: string,
-    hoverColor:string,
-    background: string,
-    hoverBackground: string,
-    title: string
+    onClick : ()=>void
   };
 
   interface ButtonProps {

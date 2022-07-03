@@ -1,17 +1,10 @@
 import styled from "styled-components";
 
-export const CustomButton = styled.button<
-{
-  color: string,
-  hoverColor:string,
-  background: string,
-  hoverBackground: string,
-  title: string
-}>`
+export const CustomButton = styled.button`
   height: 55px;
-  background: ${(props)=>props.background};
-  color: ${(props)=>props.color};
-  border: 3px solid ${(props)=>props.background};
+  background:#222;
+  color:#fff;
+  border: 3px solid #222;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -21,8 +14,8 @@ export const CustomButton = styled.button<
   gap: 1rem;
   cursor: pointer;
   &:hover{
-    background: ${(props) => props.hoverBackground};
-    color: ${(props)=>props.hoverColor};
+    background: #FFC32B;
+    color: #222;
   }
   `
 export const PlayButton = styled.button`

@@ -2,19 +2,10 @@ import {CustomButton } from './Button.style';
 import {ButtonType} from 'myButton';
 
 
-const Props : ButtonType={
-  color: '#fff',
-  hoverColor:'black',
-  background: '#222',
-  hoverBackground: '#FFC32B',
-  title: 'SomeThing'
-}
-
-
-const Button : React.FC=({children})=> {
+const Button : React.FC <{onClick:ButtonType}> =({children,onClick})=> {
 
   return(
-    <CustomButton {...Props}>
+    <CustomButton onClick={()=>onClick}>
       {children}
     </CustomButton>
   )

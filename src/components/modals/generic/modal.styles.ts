@@ -28,7 +28,7 @@ export const Container = styled.div`
 export const ContentContainer = styled.div`
   width: 800px;
   height: 80vh;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #fff;
   display: flex ;
   flex-direction: column;
@@ -52,10 +52,10 @@ export const CloseBtn = styled.div`
   align-self: flex-end;
   margin:10px;
   cursor: pointer;
-  color: #222;
+  color: #666;
   transition: all 0.3s ease-in-out;
   &:hover{
-    color: #fff;
-    background-color:#222;
+    color: #F34747;
+    background-color:rgba(255,0,0,.1);
   }
 `

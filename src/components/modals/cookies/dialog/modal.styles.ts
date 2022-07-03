@@ -32,8 +32,7 @@ export const Content = styled.div`
   justify-content: center;
   gap:1rem;
   border-radius: 8px;
-  border: 2px solid #222;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `
 
 export const Description = styled.p`
