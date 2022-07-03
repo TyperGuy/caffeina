@@ -28,8 +28,8 @@ const Calltoaction: FC = () => {
           </div>
         </div>
         <Image src="protest.png" alt="Protest" />
-        <Modal setShowModal={setIsOpen} isOpen={isOpen} >
-         
+        <Modal setShowModal={setIsOpen} isOpen={isOpen}>
+          <Form/>
         </Modal>
       </Container>
     )

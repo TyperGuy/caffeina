@@ -17,8 +17,8 @@ const Modal: FC <{isOpen:boolean,setShowModal:(isOpen:boolean)=>void} > = ({chil
         <CloseBtn onClick={() =>setShowModal(false)}>
           <X size={16} />
         </CloseBtn>
+        {children}
       </Child>
-      {children}
     </Container>
   )
 

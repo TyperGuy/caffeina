@@ -25,7 +25,7 @@ const Form : React.FC =()=>{
   return(
     <Container>
         <h2 style={{alignSelf:'start',marginTop:50}}>Vem fazer parte!</h2>
-        <div style={{marginTop:-12}}>
+        <div>
           Que tal fazer parte da nossa comunidade?
           Gostaríamos muito que cá estivesses 😍
         </div>

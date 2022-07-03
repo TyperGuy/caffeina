@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 // Styled component named StyledButton
+
 export const Container = styled.div`
   box-sizing: border-box;
   width: 400px;
@@ -21,12 +22,12 @@ export const Input = styled.input`
   width:100%;
   box-sizing: border-box;
   border-radius: 4px;
+  padding: 1.5rem 1rem;
+  transition: a
   height: 45px;
   border: 2px solid #222;
   background-color: #d9d9d9;
-  outline: none;
-  padding: 1.5rem 1rem;
-  transition: all 0.05s ease-in;
+  outline: nonll 0.05s ease-in;
   font-size:1rem;
   &:focus{
     border: 2px solid #FFC32B;
