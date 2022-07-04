@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   box-sizing: border-box;
-  width: 400px;
+  width: 550px;
   height: 600px;
   margin: 2rem 0;
   background-color: #fff;
@@ -15,7 +15,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 2.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 `;
 
 export const Input = styled.input`

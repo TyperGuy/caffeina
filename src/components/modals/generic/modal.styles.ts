@@ -26,7 +26,6 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
-  width: 800px;
   height: 80vh;
   border-radius: 6px;
   background-color: #fff;
@@ -34,7 +33,7 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   animation-name:${slowFade};
-  animation-duration: .5s;
+  animation-duration: .3s;
 `
 export const Row = styled.div`
   width: 100%;
