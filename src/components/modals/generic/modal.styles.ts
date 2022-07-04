@@ -18,7 +18,7 @@ export const Container = styled.div`
   top:0;
   left:0;
   z-index: 50000;
-  background-color: rgba(1,1,1 ,.1);
+  background-color: rgba(1,1,1 ,.2);
   display:grid;
   place-items: center;
 `
@@ -26,12 +26,12 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
-  height: 80vh;
+ 
   border-radius: 6px;
   background-color: #fff;
   display: flex ;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
   animation-name:${slowFade};
   animation-duration: .3s;
 `

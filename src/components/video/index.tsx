@@ -11,6 +11,10 @@ const  VideoPlayer = () => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="Embedded youtube"
+        style={{
+          borderRadius:'8px',
+          margin:'10px'
+        }}
     />
     </div>
    )

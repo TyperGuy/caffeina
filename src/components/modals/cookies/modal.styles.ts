@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: fixed;
   top:0;
   z-index: 50000;
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(1,1,1 ,.2);
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;

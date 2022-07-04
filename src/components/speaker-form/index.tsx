@@ -17,11 +17,11 @@ const Form : React.FC =()=>{
 
   return(
     <Container>
-        <h2 style={{alignSelf:'start',marginTop:50}}>Vem fazer parte!</h2>
-        <div>
+      <h2 style={{alignSelf:'start'}}>Vem fazer parte!</h2>
+      <div>
           Que tal fazer parte da nossa comunidade?
           Gostaríamos muito que cá estivesses 😍
-        </div>
+      </div>
       <form style={{
         display: 'flex',
         flexDirection: 'column',

@@ -21,8 +21,8 @@ export const Input = styled.input`
   width:100%;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 1.3rem 1rem;
-  transition: a
+  padding: 1.6rem 1rem;
+  transition: all 0.2s ease-in;
   height: 45px;
   border: 2px solid #222;
   background-color: #d9d9d9;
