@@ -4,13 +4,13 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import Logo from '../../assets/images/logo.png';
 import { A, ChildContainer as Child, Container, Item, Mylink } from './Header.styles';
-import { useRouter } from 'next/router'
+import Modal from '../modals/right-side';
 
 
 
 const Header : React.FC =()=>{
   const [active, setActive]  = useState('');
-  const router = useRouter();
+  const [isOpen,setIsOpen] =useState(false);
   return(
     <Container>
       <Child>
@@ -45,7 +45,12 @@ const Header : React.FC =()=>{
           }
         </div>
       </Child>
-      <Button>SEJA UM APOIADOR</Button>
+      <Button
+       onClick={setIsOpen}>
+         SEJA UM APOIADOR
+      </Button>
+      <Modal setShowModal={setIsOpen} isOpen={isOpen}>
+      </Modal>
     </Container>
   )
 }
