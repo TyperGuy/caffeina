@@ -5,11 +5,13 @@ import PlayButton from '../../components/button/PlayButton';
 import { PlayCircle } from 'phosphor-react';
 import Modal from '../../components/modals/generic';
 import Form from 'components/speaker-form';
+import VideoPlayer from '../../components/video';
 
 
 const Calltoaction: FC = () => {
 
-   const [isOpen,setIsOpen] =useState(false);
+    const [isOpen,setIsOpen] =useState(false);
+    const [isOpenVideo,setIsOpenVideo] =useState(false);
     return (
       <Container>
         <div style={{display: 'flex', flexDirection:'column', gap:'2rem'}}>
@@ -20,8 +22,12 @@ const Calltoaction: FC = () => {
               gap: '1rem'
             }}
           >
-            <Button>QUERO SER PALESTRANTE</Button>
-            <PlayButton onClick={setIsOpen}>
+            <Button
+              onClick={setIsOpen}>
+              QUERO SER PALESTRANTE
+            </Button>
+            <PlayButton
+              onClick={setIsOpenVideo}>
               <PlayCircle size={32} weight="fill" />
                 QUERO SER
             </PlayButton>
@@ -30,6 +36,9 @@ const Calltoaction: FC = () => {
         <Image src="protest.png" alt="Protest" />
         <Modal setShowModal={setIsOpen} isOpen={isOpen}>
           <Form/>
+        </Modal>
+        <Modal setShowModal={setIsOpenVideo} isOpen={isOpenVideo}>
+          < VideoPlayer/>
         </Modal>
       </Container>
     )

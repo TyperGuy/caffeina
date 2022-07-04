@@ -35,6 +35,12 @@ export const ContentContainer = styled.div`
   animation-name:${slowFade};
   animation-duration: .3s;
 `
+export const Header = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+`
+
 export const Row = styled.div`
   width: 100%;
   height: 4px;

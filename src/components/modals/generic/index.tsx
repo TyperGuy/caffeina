@@ -1,6 +1,6 @@
 import { X } from 'phosphor-react';
 import { FC, useImperativeHandle, forwardRef, useState, useCallback, } from 'react';
-import { Container,ContentContainer as Child, Row,CloseBtn} from './modal.styles';
+import { Container,ContentContainer as Child, Row,CloseBtn, Header} from './modal.styles';
 
 const typeModal ={
   ask : 'askModal',
@@ -14,9 +14,11 @@ const Modal: FC <{isOpen:boolean,setShowModal:(isOpen:boolean)=>void} > = ({chil
     <Container>
       <Child>
         <Row/>
-        <CloseBtn onClick={() =>setShowModal(false)}>
-          <X size={16} />
-        </CloseBtn>
+        <Header>
+          <CloseBtn onClick={() =>setShowModal(false)}>
+            <X size={16} />
+          </CloseBtn>
+        </Header>
         {children}
       </Child>
     </Container>

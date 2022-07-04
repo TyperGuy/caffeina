@@ -2,13 +2,6 @@ import React, { useState } from 'react';
 import {Container,Input,Textarea,Button} from './Form.styles';
 import {ButtonType} from 'myButton';
 
-const Props : ButtonType = {
-  color: "#FFF",
-  hoverColor:"#FFF",
-  background: "#222",
-  hoverBackground:"#222",
-  title : 'SEJA MEMBRO'
-}
 
 
 const Form : React.FC =()=>{
@@ -19,7 +12,7 @@ const Form : React.FC =()=>{
       setChars(chars)
     else
       console.log("está lá")
-       
+
   }
 
   return(
@@ -49,7 +42,7 @@ const Form : React.FC =()=>{
          maxLength={300}
          onChange={(e)=>controlChars(e.target.value.length)}
          />
-        <span 
+        <span
           style={{
               alignSelf:'end',
               marginTop:'-21px',
@@ -57,7 +50,7 @@ const Form : React.FC =()=>{
           }}>
             {chars + '/300'}
         </span>
-        <Button>Enviar</Button>
+        <Button>ENVIAR CANDIDATURA</Button>
       </form>
     </Container>
   )

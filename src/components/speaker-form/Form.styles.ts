@@ -21,15 +21,17 @@ export const Input = styled.input`
   width:100%;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 1.5rem 1rem;
+  padding: 1.3rem 1rem;
   transition: a
   height: 45px;
   border: 2px solid #222;
   background-color: #d9d9d9;
-  outline: nonll 0.05s ease-in;
+  transition: all 0.2s ease-in;
   font-size:1rem;
   &:focus{
-    border: 2px solid #FFC32B;
+    outline-style: solid;
+    border: 2px solid #fff;
+    outline-width: medium;
   }
 `;
 export const Textarea = styled.textarea`
@@ -38,19 +40,21 @@ export const Textarea = styled.textarea`
   border-radius: 4px;
   border: 2px solid #222;
   background-color: #d9d9d9;
-  outline: none;
   padding: 1rem;
-  transition: all 0.05s ease-in;
+  transition: all 0.2s ease-in;
   font-size:1rem;
   resize: none;
   &:focus{
-    border: 2px solid #FFC32B;
+    outline-style: solid;
+    border: 2px solid #fff;
+    outline-width: medium;
   }
 `;
 export const Button = styled.button`
   height: 55px;
   width: 100%;
   background:#222;
+  border: 2px solid #222;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -61,11 +65,13 @@ export const Button = styled.button`
   &:hover{
     background: #FFC32B;
     color: #222;
+    border: .2rem solid #222;
   }
   &:focus{
     outline-style:solid;
-    outline-color:#FFC32B;
-    outline-width:2px;
+    outline-color:#222;
+    border: 2px solid #fff;
+    outline-width: medium;;
   }
 `
 

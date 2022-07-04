@@ -1,11 +1,10 @@
 import {CustomButton } from './Button.style';
-import {ButtonType} from 'myButton';
 
 
-const Button : React.FC <{onClick:ButtonType}> =({children,onClick})=> {
+const Button : React.FC<{onClick:(isOpen:boolean)=>void}> =({children,onClick})=> {
 
   return(
-    <CustomButton onClick={()=>onClick}>
+    <CustomButton onClick={()=>onClick(true)}>
       {children}
     </CustomButton>
   )
