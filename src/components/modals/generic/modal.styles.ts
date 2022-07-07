@@ -26,7 +26,7 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
- 
+
   border-radius: 6px;
   background-color: #fff;
   display: flex ;
@@ -45,7 +45,6 @@ export const Row = styled.div`
   width: 100%;
   height: 4px;
   border-radius:8px 8px 0 0;
-  background-color: #F34747;
 `
 export const CloseBtn = styled.div`
   width: 25px;
