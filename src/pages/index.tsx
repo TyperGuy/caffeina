@@ -32,8 +32,8 @@ const Home: NextPage = () => {
   return(
     <div id="float" style={{ display: 'flex', height: 'auto',flexDirection: 'column',alignItems: 'center'}}>
       <Calltoaction/>
-      <Banner/>
       <Sponsors/>
+      <Banner/>
       <Events/>
       <FloatingButton/>
     </div>
