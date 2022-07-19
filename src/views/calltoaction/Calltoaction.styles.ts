@@ -12,8 +12,7 @@ export const Container = styled.div`
 
 `;
 export const Content = styled.h1`
-  line-height: 1.1;
-  font-weight: 700;
+  line-height: 1;
   color: #222;
   font-size: calc(15.3333px + 1.85185vw);
   margin:0;
