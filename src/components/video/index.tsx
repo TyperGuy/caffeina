@@ -1,9 +1,14 @@
+import { DefaultUi, Player, Youtube } from "@vime/react";
+import '@vime/core/themes/default.css';
 
 const  VideoPlayer = () => {
   const embedId : string ='rokGy0huYEA';
+  const Styles ={
+    width: 1000
+  }
    return(
-    <div>
-      <iframe
+    <div style={Styles}>
+     { /* <iframe
         width="853"
         height="480"
         src={`https://www.youtube.com/embed/${embedId}`}
@@ -15,7 +20,12 @@ const  VideoPlayer = () => {
           borderRadius:'8px',
           margin:'10px'
         }}
-    />
+      /> */}
+
+      <Player>
+        <Youtube videoId="rokGy0huYEA"/>
+        <DefaultUi/>
+      </Player>
     </div>
    )
 }
