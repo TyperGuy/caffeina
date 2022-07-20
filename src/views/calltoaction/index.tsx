@@ -1,11 +1,17 @@
 import {FC, useState} from 'react';
+import dynamic from 'next/dynamic';
 import {Container, Content, Underlined,Image} from './Calltoaction.styles';
 import Button from '../../components/button';
 import PlayButton from '../../components/button/PlayButton';
 import { PlayCircle } from 'phosphor-react';
 import Modal from '../../components/modals/generic';
 import Form from 'components/speaker-form';
-import VideoPlayer from '../../components/video';
+
+
+const VideoWithNoSSR = dynamic(
+  () => import('../../components/video'),
+  { ssr: false }
+)
 
 
 const Calltoaction: FC = () => {
@@ -38,7 +44,7 @@ const Calltoaction: FC = () => {
           <Form/>
         </Modal>
         <Modal setShowModal={setIsOpenVideo} isOpen={isOpenVideo}>
-          < VideoPlayer/>
+          < VideoWithNoSSR/>
         </Modal>
       </Container>
     )
