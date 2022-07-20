@@ -4,7 +4,8 @@ import '@vime/core/themes/default.css';
 const  VideoPlayer = () => {
   const embedId : string ='rokGy0huYEA';
   const Styles ={
-    width: 1000
+    width: 1000,
+    margin: 10
   }
    return(
     <div style={Styles}>
