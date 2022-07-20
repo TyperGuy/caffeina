@@ -7,16 +7,24 @@ export const Container = styled.div`
   width: 100vw;
   height: 281px;
   display: grid;
-  splash-items: center;
+  place-items: center;
   background-color: rgb(255,205,0);
 `;
 
 export const ChildContainer = styled.div`
-  height: 68px;
+  height:100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url('background-face.png');
+
+`;
+
+export const Stats = styled.div`
+  width: 1000px;
   display: flex;
-  align-items: center;
+  justify-content:space-between;
   gap:1.5rem;
-  cursor: pointer;
 `;
 
 export const A = styled.a`
